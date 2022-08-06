@@ -18,34 +18,33 @@
 <!--Body of HTML-->
 
 <body>
-
   <!--Top parts: logo, navigation and so on -->
   <header class="header">
-    <div class="container header-panel">
+    <div class="container header__conteiner">
       <!--Navigation panel-->
       <nav class="nav-panel">
         <!--Logo text and link-->
-        <a class="logo" href=./index.html lang="en">Web<span class="black-color-logo">Studio</span></a>
+        <a class="logo" href=./index.html lang="en">Web<span class="logo__text">Studio</span></a>
 
         <!--Site naviagation list-->
         <ul class="site-nav list">
-          <li>
-            <a class="link " href="./index.html">Студия</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link link" href="./index.html">Студия</a>
           </li>
-          <li>
-            <a class="link current" href="./portfolio.html">Портфолио</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link link site-nav__link--current" href="./portfolio.html">Портфолио</a>
           </li>
-          <li>
-            <a class="link" href="">Контакты</a>
+          <li class="site-nav__item">
+            <a class="site-nav__link link" href="">Контакты</a>
           </li>
         </ul>
       </nav>
 
-      <ul class="contact list">
+      <ul class="header-contact list">
         <li>
           <!--Contact e-mail-->
-          <a class="link contact-link" href="mailto:info@devstudio.com">
-            <svg class="mail-icon" width="16" height="12">
+          <a class="link header-contact__link" href="mailto:info@devstudio.com">
+            <svg class="header-contact__icon" width="16" height="12">
               <use href="./images/icons/sprit-icons.svg#e-mail"></use>
             </svg>
             info@devstudio.com
@@ -53,8 +52,8 @@
         </li>
         <li>
           <!--Contact mob. tel.-->
-          <a class="link contact-link" href="tel:+380961111111">
-            <svg class="telephone-icon" width="10" height="16">
+          <a class="link header-contact__link" href="tel:+380961111111">
+            <svg class="header-contact__icon" width="10" height="16">
               <use href="./images/icons/sprit-icons.svg#mobile"></use>
             </svg>
             +38 096 111 11 11
@@ -72,166 +71,184 @@
       <div class="container">
         <h1 class="visually-hidden">Основные работы: список сайтов</h1>
         <!-- Sort buttons-->
-        <ul class="list filter-bottons">
-          <li><button class="portfolio-buttons active-filter" type="button">Все</button></li>
-          <li><button class="portfolio-buttons" type="button">Веб-сайты</button></li>
-          <li><button class="portfolio-buttons" type="button">Приложения</button></li>
-          <li><button class="portfolio-buttons" type="button">Дизайн</button></li>
-          <li><button class="portfolio-buttons" type="button">Маркетинг</button></li>
+        <ul class="list filter">
+          <li><button class="filter__button filter__button--active" type="button">Все</button></li>
+          <li><button class="filter__button" type="button">Веб-сайты</button></li>
+          <li><button class="filter__button" type="button">Приложения</button></li>
+          <li><button class="filter__button" type="button">Дизайн</button></li>
+          <li><button class="filter__button" type="button">Маркетинг</button></li>
         </ul>
 
         <!-- Importance portfolio projects -->
-        <ul class="portfolio-cards list card-set">
+        <ul class="portfolio-prj list card-set">
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img1.jpg" alt="Вид страницы Технокряк" width="370"
                   height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Технокряк</h2>
-                <p class="portfolio-direction">Веб-сайт</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Технокряк</h2>
+                <p class="portfolio-prg__direction">Веб-сайт</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img2.jpg" alt="Вид постера New Orlean vs Golden Star"
                   width="370" height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio-direction">Дизайн</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Постер New Orlean vs Golden Star</h2>
+                <p class="portfolio-prj__direction">Дизайн</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img3.jpg" alt="Приложение ресторана Seafood" width="370"
                   height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                <p class="portfolio-direction">Приложение</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Ресторан Seafood</h2>
+                <p class="portfolio-prj__direction">Приложение</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img4.jpg" alt="Иконка проекта Prime" width="370"
                   height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Проект Prime</h2>
-                <p class="portfolio-direction">Маркетинг</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Проект Prime</h2>
+                <p class="portfolio-prj__direction">Маркетинг</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img5.jpg" alt="Приложение Boxes" width="370"
                   height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Проект Boxes</h2>
-                <p class="portfolio-direction">Приложение</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Проект Boxes</h2>
+                <p class="portfolio-prj__direction">Приложение</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img6.jpg" alt="Вид страницы Inspiration has no Borders"
                   width="370" height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                <p class="portfolio-direction">Веб-сайт</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Inspiration has no Borders</h2>
+                <p class="portfolio-prj__direction">Веб-сайт</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img7.jpg" alt="Вид журнала Limited Edition" width="370"
                   height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Издание Limited Edition</h2>
-                <p class="portfolio-direction">Дизайн</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Издание Limited Edition</h2>
+                <p class="portfolio-prj__direction">Дизайн</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img8.jpg" alt="Иконка проекта LAB" width="370"
                   height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Проект LAB</h2>
-                <p class="portfolio-direction">Маркетинг</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Проект LAB</h2>
+                <p class="portfolio-prj__direction">Маркетинг</p>
               </div>
             </a>
           </li>
           <li class="card-item">
-            <a class="portfolio-link link" href="https://www.google.com/" target="_blank" rel="noreferrer noopener">
-              <div class="portfolio-thumb">
+            <a class="portfolio-prj__link link" href="https://www.google.com/" target="_blank"
+              rel="noreferrer noopener">
+              <div class="portfolio-prj__thumb">
                 <img src="./images/portfolio-projects/portfolio-img9.jpg" alt="Вид приложения Growing Business"
                   width="370" height="294">
-                <div class="portfolio-overlay">
-                  <p class="portfolio-discr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                <div class="portfolio-prj__overlay">
+                  <p class="portfolio-prj__discr">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                    и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании или частном
                     лице.</p>
                 </div>
               </div>
-              <div class="portfolio-text">
-                <h2 class="portfolio-title">Growing Business</h2>
-                <p class="portfolio-direction">Приложение</p>
+              <div class="portfolio-prj__text">
+                <h2 class="portfolio-prj__title">Growing Business</h2>
+                <p class="portfolio-prj__direction">Приложение</p>
               </div>
             </a>
           </li>
@@ -244,61 +261,61 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-divide">
-
         <ul class="list footer-list">
           <!-- Left part of footer contacts -->
           <li>
             <!--Logo text and link-->
-            <a class="logo footer-logo" href=./index.html lang="en">Web<span class="white-text-logo">Studio</span></a>
+            <a class="logo logo__footer" href=./index.html lang="en">Web<span
+                class="logo__foooter--color">Studio</span></a>
             <!--Address and develotment contacts-->
-            <address class="footer-address">
-              <ul class="list dev-data">
-                <li class="dev-data-item">
-                  <a class="dev-adrress link" href="https://goo.gl/maps/GUnd78wBxHpprMvDA" target="_blank"
+            <address class="footer-contact">
+              <ul class="list footer-contact__data">
+                <li class="footer-contact__item">
+                  <a class="footer-contact__link link" href="https://goo.gl/maps/GUnd78wBxHpprMvDA" target="_blank"
                     rel="noreferrer noopener">г. Киев, пр-т Леси Украинки,
                     26</a>
                 </li>
-                <li class="dev-data-item">
-                  <a class="dev-contact link" href="mailto:info@example.com">info@example.com</a>
+                <li class="footer-contact__item">
+                  <a class="footer-contact__link--color link" href="mailto:info@example.com">info@example.com</a>
                 </li>
-                <li class="dev-data-item">
-                  <a class="dev-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <li class="footer-contact__item">
+                  <a class="footer-contact__link--color link" href="tel:+380991111111">+38 099 111 11 11</a>
                 </li>
               </ul>
             </address>
           </li>
           <!-- Right part of footer contacts-->
-          <li>
-            <p class="conection-text">Присоединяйтесь</p>
-            <ul class="list social-list">
-              <li class="social-item">
-                <a class="footer-link social-link link" href="" target="_blank" rel="noreferrer noopener"
-                  aria-label="Инстаграм">
-                  <svg class="footer-icon" width="20" height="20">
+          <li class="footer-conection">
+            <p class="footer-conection__text">Присоединяйтесь</p>
+            <ul class="list social-network">
+              <li class="social-network__item">
+                <a class="footer-network__link social-network__link link" href="" target="_blank"
+                  rel="noreferrer noopener" aria-label="Инстаграм">
+                  <svg class="footer-network__icon" width="20" height="20">
                     <use href="./images/icons/sprit-icons.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a class="footer-link social-link link" href="" target="_blank" rel="noreferrer noopener"
-                  aria-label="Твитер">
-                  <svg class="footer-icon" width="20" height="20">
+              <li class="social-network__item">
+                <a class="footer-network__link social-network__link link" href="" target="_blank"
+                  rel="noreferrer noopener" aria-label="Твитер">
+                  <svg class="footer-network__icon" width="20" height="20">
                     <use href="./images/icons/sprit-icons.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a class="footer-link social-link link" href="" target="_blank" rel="noreferrer noopener"
-                  aria-label="Фасебук">
-                  <svg class="footer-icon" width="20" height="20">
+              <li class="social-network__item">
+                <a class="footer-network__link social-network__link link" href="" target="_blank"
+                  rel="noreferrer noopener" aria-label="Фасебук">
+                  <svg class="footer-network__icon" width="20" height="20">
                     <use href="./images/icons/sprit-icons.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a class="footer-link social-link link" href="" target="_blank" rel="noreferrer noopener"
-                  aria-label="ЛинкедИн">
-                  <svg class="footer-icon" width="20" height="20">
+              <li class="social-network__item">
+                <a class="footer-network__link social-network__link link" href="" target="_blank"
+                  rel="noreferrer noopener" aria-label="ЛинкедИн">
+                  <svg class="footer-network__icon" width="20" height="20">
                     <use href="./images/icons/sprit-icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -308,14 +325,14 @@
         </ul>
 
         <div class="subscription">
-          <p class="conection-text">Подпишитесь на рассылку</p>
-          <form class="fotter-form">
-            <label class="footer-label">
-              <input class="footer-input" type="email" name="email-subscribe" placeholder="E-mail">
+          <p class="footer-conection__text">Подпишитесь на рассылку</p>
+          <form class="footer-form">
+            <label class="footer-form__label">
+              <input class="footer-form__input" type="email" name="email-subscribe" placeholder="E-mail">
             </label>
-            <button class="order-button" type="submit">
+            <button class="button" type="submit">
               Подписаться
-              <svg class="footer-btn-icon" width="24" height="24">
+              <svg class="button__icon--color" width="24" height="24">
                 <use href="./images/icons/sprit-icons.svg#send"></use>
               </svg>
             </button>

@@ -204,7 +204,7 @@ img {
 .site-nav__link:focus,
 .header-contact__link:hover,
 .header-contact__link:focus {
-    color: var(--blue-color);
+    color: var(--blue-color);   
 }
 
 /* .site-nav{} */
@@ -324,9 +324,9 @@ img {
     color: var(--full-white-text);
 }
 
-.footer-social
+.footer-conection{}
 
-.footer-social__text {
+.footer-conection__text {
     font-weight: 700;
     line-height: calc(16 / 14);
     text-transform: uppercase;
@@ -335,20 +335,19 @@ img {
     margin-bottom: 20px;
 }
 
-.social-item .footer-link {
+.footer-network__link {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.fotter-form {
+.footer-network__icon {
+    fill: var(--full-white-text);
+}
+.footer-form {
     display: flex;
     gap: 12px;
 }
 
-.footer-icon {
-    fill: var(--full-white-text);
-}
-
-.footer-input {
+.footer-form__input {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -363,19 +362,20 @@ img {
     cursor: pointer;
 }
 
-.footer-input:hover,
-.footer-input:focus {
+.footer-form__input:hover,
+.footer-form__input:focus {
     border-color: var(--blue-color);
 }
 
-.fotter-input::placeholder {
+.fotter-form__input::placeholder {
     line-height: 1.25;
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-btn-icon {
+
+.button__icon--color {
     margin-left: 10px;
 
     fill: var(--full-white-text);
@@ -618,7 +618,7 @@ img {
 .social-icon:focus {} */
 
 /* Clients-list section */
-.clients-list .card-item {
+.client__set .card-item {
     --card-numbers: 6;
 }
 
@@ -627,7 +627,7 @@ img {
 
 /* .client-item{} */
 
-.client-link {
+.client__link {
     display: flex;
     height: 92px;
     align-items: center;
@@ -640,12 +640,12 @@ img {
     transition: color var(--animation-time);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
     color: var(--blue-color);
 }
 
-.client-icon {
+.client__icon {
     fill: currentColor;
 }
 
@@ -699,7 +699,7 @@ Model windows and overlay
     transform: translate(50px, 200px) scale(1.3) rotate(45deg);
 }
 
-.close-btn {
+.modal-form__close-btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -717,19 +717,19 @@ Model windows and overlay
     cursor: pointer;
 }
 
-.close-icon {
+.modal-form__close-icon {
     fill: var(--full-black-text);
 
     transition: fill var(--animation-time);
 }
 
-.close-btn:hover .close-icon,
-.close-btn:focus .close-icon {
+.modal-form__close-btn:hover .close-icon,
+.modal-form__close-btn:focus .close-icon {
     fill: var(--blue-color);
 }
 
 /* Feedback form */
-.feedback-form-title {
+.feedback-form__title {
     display: block;
 
     font-weight: 700;
@@ -741,24 +741,24 @@ Model windows and overlay
     margin-bottom: 12px;
 }
 
-.feedback-form-group {
+.feedback-form__group {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.feedback-label {
+.feedback-form__label {
     display: flex;
     flex-direction: column;
 
     height: 58px;
     width: 100%;
 
-    cursor: pointer
+    cursor: pointer;
 }
 
-.feedback-id-data {
+.feedback-form__id-data {
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
@@ -768,12 +768,12 @@ Model windows and overlay
     margin-bottom: 4px;
 }
 
-.feedback-wrap {
+.feedback-form__wrap {
     position: relative;
 
 }
 
-.feedback-input-data {
+.feedback-form__input {
     height: 40px;
     width: 100%;
 
@@ -787,7 +787,7 @@ Model windows and overlay
     transition: border var(--animation-time);
 }
 
-.feedback-form-icon {
+.feedback-form__icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);    
@@ -797,25 +797,25 @@ Model windows and overlay
     transition: fill var(--animation-time);
 }
 
-.feedback-input-data:hover,
-.feedback-input-data:focus {
+.feedback-form__input:hover,
+.feedback-form__input:focus {
     border: 1px solid var(--blue-color);
     outline: none;
 }
 
-.feedback-input-data:hover+.feedback-form-icon,
-.feedback-input-data:focus+.feedback-form-icon {
+.feedback-form__input:hover+.feedback-form__icon,
+.feedback-form__input:focus+.feedback-form__icon {
     fill: var(--blue-color);
 }
 
-.validation-icons {
+.validation-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
 }
 
-.success-icon {
+.validation-icon--success {
     fill: rgb(50, 136, 4);
     opacity: 0;
     transform: scale(0.4);
@@ -824,7 +824,7 @@ Model windows and overlay
     transition: opacity var(--animation-time), transform var(--animation-time);
 }
 
-.warning-icon {
+.validation-icon--warning {
     fill: rgb(160, 112, 0);
     opacity: 0;
     transform: scale(0.4);
@@ -833,21 +833,17 @@ Model windows and overlay
     transition: opacity var(--animation-time), transform var(--animation-time);
 }
 
-.feedback-input-data:invalid:required:not(:placeholder-shown)~.validation-icons .warning-icon {
+.feedback-form__input:invalid:required:not(:placeholder-shown)~.validation-icon .validation-icon--warning {
     opacity: 1;
     transform: scale(1.0);
 }
 
-.feedback-input-data:valid:required:not(:placeholder-shown)~.validation-icons .success-icon {
+.feedback-form__input:valid:required:not(:placeholder-shown)~.validation-icon .validation-icon--success {
     opacity: 1;
     transform: scale(1.0);
 }
 
-.feedback-label-textarea {
-    cursor: pointer;
-}
-
-.feedback-text {
+.feedback-form__comment {
     display: block;
     resize: none;
     padding: 12px 16px;
@@ -860,20 +856,20 @@ Model windows and overlay
     cursor: pointer;
 }
 
-.feedback-text:hover,
-.feedback-text:focus {
+.feedback-form__comment:hover,
+.feedback-form__comment:focus {
     border-color: var(--blue-color);
     outline: 0;
 }
 
-.feedback-text::placeholder {
+.feedback-form__comment::placeholder {
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
 }
 
-.feedback-agreement {
+.checkbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -885,11 +881,11 @@ Model windows and overlay
     margin-bottom: 30px;
 }
 
-.agreement-text {
+.checkbox__disc {
     user-select: none;
 }
 
-.contract-terms-link {
+.checkbox__disc-link {
     color: var(--blue-color);
     text-decoration-line: underline;
     text-underline-position: under;
@@ -897,33 +893,33 @@ Model windows and overlay
     transition: color var(--animation-time);
 }
 
-.contract-terms-link:hover,
-.contract-terms-link:focus {
+.checkbox__disc-link:hover,
+.checkbox__disc-link:focus {
     color: --blue-accent-color;
 }
 
 /* .check-icons {} */
 
-.unchecked {
+.checkbox__icon--unchecked {
     opacity: 1;
     transition: opacity var(--animation-time);
 }
 
-.checked {
+.checkbox__icon--checked {
     opacity: 0;
     transition: opacity var(--animation-time);
 }
 
-.feedback-agreement-check:hover+.check-icons .unchecked,
-.feedback-agreement-check:focus+.check-icons .unchecked {
+.checkbox__input:hover+.checkbox__icon .checkbox__icon--unchecked,
+.checkbox__input:focus+.checkbox__icon .checkbox__icon--unchecked {
     fill: var(--blue-color);
 }
 
-.feedback-agreement-check:checked+.check-icons .unchecked {
+.checkbox__input:checked+.checkbox__icon .checkbox__icon--unchecked {
     opacity: 0;
 }
 
-.feedback-agreement-check:checked+.check-icons .checked {
+.checkbox__input:checked+.checkbox__icon .checkbox__icon--checked {
     opacity: 1;
 }
 
@@ -937,7 +933,7 @@ Model windows and overlay
 /* .portfolio{} */
 
 /* Colection parameters for filter bottons of Portfolio page */
-.filter-bottons {
+.filter {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -945,7 +941,7 @@ Model windows and overlay
 }
 
 /* Filtration buttons for portfolio */
-.portfolio-buttons {
+.filter__button {
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
@@ -969,9 +965,9 @@ Model windows and overlay
     transition: color var(--animation-time), background-color var(--animation-time), box-shadow var(--animation-time);
 }
 
-.portfolio-buttons:hover,
-.portfolio-buttons:focus,
-.active-filter {
+.filter__button:hover,
+.filter__button:focus,
+.filter__button--active {
     color: var(--full-white-text);
 
     background-color: var(--blue-color);
@@ -979,23 +975,23 @@ Model windows and overlay
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-link {
+.portfolio-prj__link {
     display: block;
 
     transition: box-shadow var(--animation-time);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-prj__link:hover,
+.portfolio-prj__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-thumb {
+.portfolio-prj__thumb {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio-prj__overlay {
     display: flex;
     position: absolute;
 
@@ -1007,12 +1003,12 @@ Model windows and overlay
     background-color: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-link:hover .portfolio-overlay,
-.portfolio-link:focus .portfolio-overlay {
+.portfolio-prj__link:hover .portfolio-prj__overlay,
+.portfolio-prj__link:focus .portfolio-prj__overlay {
     transform: translateY(-100%);
 }
 
-.portfolio-discr {
+.portfolio-prj__discr {
     padding-left: 24px;
     padding-right: 24px;
     align-self: center;
@@ -1024,7 +1020,7 @@ Model windows and overlay
 }
 
 
-.portfolio-text {
+.portfolio-prj__text {
     padding-top: 20px;
     padding-right: 24px;
     padding-bottom: 20px;
@@ -1035,7 +1031,7 @@ Model windows and overlay
     border-left: 1px solid var(--gray-border-line);
 }
 
-.portfolio-title {
+.portfolio-prj__title {
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -1045,7 +1041,7 @@ Model windows and overlay
     color: var(--gray-black-text);
 }
 
-.portfolio-direction {
+.portfolio-prj__direction {
     font-size: 16px;
     line-height: 1.88;
 }
