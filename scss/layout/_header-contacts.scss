@@ -1,11 +1,16 @@
 /* Header - contacts */
 .header-contact {
+    @extend %reset-list;
+
     display: flex;
     gap: 50px;
     align-self: center;
     margin-left: auto;
 
     &__link {
+        @extend %reset-link;
+
+
         display: flex;
         align-items: center;
         gap: 10px;

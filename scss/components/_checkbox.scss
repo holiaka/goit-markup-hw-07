@@ -9,11 +9,11 @@
 
     margin-bottom: 30px;
 
-    .checkbox__disc {
+    &__disc {
         user-select: none;
     }
 
-    .checkbox__disc-link {
+    &__disc-link {
         color: var(--blue-color);
         text-decoration-line: underline;
         text-underline-position: under;
@@ -21,32 +21,32 @@
         transition: color var(--animation-time);
     }
 
-    .checkbox__disc-link:hover,
-    .checkbox__disc-link:focus {
+    &__disc-link:hover,
+    &__disc-link:focus {
         color: --blue-accent-color;
     }
 
 
-    .checkbox__icon--unchecked {
+    &__icon--unchecked {
         opacity: 1;
         transition: opacity var(--animation-time);
     }
 
-    .checkbox__icon--checked {
+    &__icon--checked {
         opacity: 0;
         transition: opacity var(--animation-time);
     }
 
-    .checkbox__input:hover+.checkbox__icon .checkbox__icon--unchecked,
-    .checkbox__input:focus+.checkbox__icon .checkbox__icon--unchecked {
+    &__input:hover+&__icon &__icon--unchecked,
+    &__input:focus+&__icon &__icon--unchecked {
         fill: var(--blue-color);
     }
 
-    .checkbox__input:checked+.checkbox__icon .checkbox__icon--unchecked {
+    &__input:checked+&__icon &__icon--unchecked {
         opacity: 0;
     }
 
-    .checkbox__input:checked+.checkbox__icon .checkbox__icon--checked {
+    &__input:checked+&__icon &__icon--checked {
         opacity: 1;
     }    
 }

@@ -7,3 +7,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+%reset-list {
+    list-style: none;
+}
+
+%reset-link{
+    text-decoration: none;
+    color: currentColor;
+}

@@ -1,5 +1,6 @@
 // Utils
 
+@import "./utils/normalize";
 @import "./utils/variables";
 @import "./utils/visually-hidden";
 @import "./utils/placeholders";
@@ -29,6 +30,8 @@
 @import "./components/feedback-form";
 @import "./components/validation-icon";
 @import "./components/checkbox";
+@import "./components/filter-bottons";
+
 
 
 
@@ -49,4 +52,5 @@
 @import "./layout/work-section";
 @import "./layout/team-section";
 @import "./layout/client-section";
+@import "./layout/portfolio-section&projects";
 

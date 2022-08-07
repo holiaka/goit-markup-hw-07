@@ -37,8 +37,8 @@
         cursor: pointer;
     }
 
-    &__close-btn:hover .close-icon,
-    &__close-btn:focus .close-icon {
+    &__close-btn:hover &__close-icon,
+    &__close-btn:focus &__close-icon {
         fill: var(--blue-color);
     }
 
