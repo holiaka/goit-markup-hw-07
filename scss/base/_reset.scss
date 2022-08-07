@@ -1,0 +1,42 @@
+/* Standard features */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--gray-text);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Delete all points near the list of items */
+.list {
+    list-style: none;
+}
+
+/* Remove standart decoration for links */
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* Global reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+a,
+address,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+/* Images parameters */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

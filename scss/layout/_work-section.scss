@@ -1,0 +1,34 @@
+.work {
+    @include section-padding(0px, 94px);
+
+    &__container{
+        @extend %container;
+    }
+
+    &__thumb {
+        position: relative;
+    }
+
+    &__direction {
+        display: inline-block;
+
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 70px;
+
+        font-weight: 700;
+        line-height: calc(16 / 14);
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--full-white-text);
+
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        background-color: rgba(47, 48, 58, 0.8);
+    }  
+}
+
+
+

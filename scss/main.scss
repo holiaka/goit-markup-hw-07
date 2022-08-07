@@ -1,17 +1,52 @@
 // Utils
 
-@import ".utils/variables";
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixin";
+
+
 
 
 // Base
 
-@import ".base/";
+@import "./base/reset";
+@import "./base/no-scrol";
+@import "./base/no-visualisation";
+
+
+
 
 // Components
+
+@import "./components/card-set";
+@import "./components/logo";
+@import "./components/button";
+@import "./components/section-title";
+@import "./components/social-networks";
+@import "./components/backdrop";
+@import "./components/modal-form";
+@import "./components/feedback-form";
+@import "./components/validation-icon";
+@import "./components/checkbox";
+
+
 
 
 
 // Layout
 
-
+@import "./layout/header-nav";
+@import "./layout/header-site-nav";
+@import "./layout/header-contacts";
+@import "./layout/footer_place";
+@import "./layout/footer-contact";
+@import "./layout/footer-conection";
+@import "./layout/footer-network";
+@import "./layout/footer-form";
+@import "./layout/hero-section";
+@import "./layout/benefit_section";
+@import "./layout/work-section";
+@import "./layout/team-section";
+@import "./layout/client-section";
 

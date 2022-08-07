@@ -1,0 +1,38 @@
+.footer-contact {
+    font-style: normal;
+
+    &__item:not(:last-child) {
+        display: block;
+        margin-bottom: 9px;
+    }
+
+    &__link {
+        padding: 5px 0;
+        color: var(--full-white-text);
+        transition: color var(--animation-time);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--gray-text);
+    }
+
+    &__link--color {
+        padding: 5px 0;
+        color: rgba(255, 255, 255, 0.6);
+
+        transition: color var(--animation-time);
+    }
+
+    &__link--color:hover,
+    &__link--color:focus {
+        color: var(--full-white-text);
+    }
+
+}
+
+
+
+
+
+

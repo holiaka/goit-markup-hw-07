@@ -1,0 +1,6 @@
+/* ***Main sections*** */
+
+@mixin section-padding($p-top: 94px, $p-buttom: 94px) {
+    padding-top: $p-top;
+    padding-bottom: $p-buttom;
+}

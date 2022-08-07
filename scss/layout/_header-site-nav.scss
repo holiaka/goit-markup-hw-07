@@ -1,0 +1,38 @@
+/* Header - navigator */
+
+.site-nav {
+    display: flex;
+    gap: 50px;
+    color: var(--gray-black-text);
+
+    &__link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color var(--animation-time);
+    }
+
+    &__link--current,
+    &__link:hover,
+    &__link:focus {
+        color: var(--blue-color);
+    }
+
+    &__link--current {
+       position: relative;
+    }
+
+    &__link--current::after {
+        position: absolute;
+        content: '';
+
+        display: block;
+        bottom: -1px;
+
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+
+        background-color: currentColor;
+    }
+}
