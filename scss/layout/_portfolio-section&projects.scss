@@ -11,8 +11,11 @@
 
 // Portfolio projects set
 .portfolio-prj{
+    @extend %reset-list;
 
     &__link {
+        @extend %reset-link;
+
         display: block;
         transition: box-shadow var(--animation-time);
     }

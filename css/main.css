@@ -194,11 +194,11 @@ summary {
   margin-right: auto;
 }
 
-.work__list, .header-contact {
+.portfolio-prj, .client__set, .team__list, .work__list, .benefit__list, .footer-contact__data, .footer-contact, .footer__list, .header-contact, .site-nav, .filter, .social-network {
   list-style: none;
 }
 
-.header-contact__link {
+.portfolio-prj__link, .client__link, .footer-contact__link--color, .footer-contact__link, .header-contact__link, .site-nav__link, .social-network__link {
   text-decoration: none;
   color: currentColor;
 }

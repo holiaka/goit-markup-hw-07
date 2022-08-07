@@ -7,11 +7,17 @@
         @extend %container;
     }
     
+    &__set{
+        @extend %reset-list;
+    }
+
     &__set .card-item {
         --card-numbers: 6;
     }
 
     &__link {
+        @extend %reset-link;
+
         display: flex;
         height: 92px;
         align-items: center;

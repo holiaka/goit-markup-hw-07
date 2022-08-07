@@ -5,6 +5,10 @@
         @extend %container;
     }
 
+    &__list{
+        @extend %reset-list;
+    }
+
     &__list .card-item {
         --card-numbers: 4;
     }

@@ -1,5 +1,7 @@
 /* Colection parameters for filter bottons of Portfolio page */
 .filter {
+    @extend %reset-list;
+
     display: flex;
     justify-content: center;
     gap: 8px;
