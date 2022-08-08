@@ -20,20 +20,20 @@
         color: var(--blue-color);
     }
 
-    &__footer {
+    &--location {
         display: inline-block;    
         margin-bottom: 20px;
         padding-top: 0;
         padding-bottom: 0;
     }
     
-    &__footer--color {
+    &__text--color {
         color: var(--full-white-text);    
         transition: color var(--animation-time);
     }
     
-    &__footer--color:hover,
-    &__footer--color:focus {
+    &__text--color:hover,
+    &__text--color:focus {
         color: var(--blue-color);
     }
 }

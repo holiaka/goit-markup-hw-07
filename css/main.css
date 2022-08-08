@@ -280,18 +280,18 @@ img {
 .logo__text:hover, .logo__text:focus {
   color: var(--blue-color);
 }
-.logo__footer {
+.logo--location {
   display: inline-block;
   margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
 }
-.logo__footer--color {
+.logo__text--color {
   color: var(--full-white-text);
   -webkit-transition: color var(--animation-time);
   transition: color var(--animation-time);
 }
-.logo__footer--color:hover, .logo__footer--color:focus {
+.logo__text--color:hover, .logo__text--color:focus {
   color: var(--blue-color);
 }
 
@@ -329,7 +329,7 @@ img {
 .button:hover, .button:focus {
   background-color: var(--blue-accent-color);
 }
-.button__icon--color {
+.button__icon {
   margin-left: 10px;
   fill: var(--full-white-text);
 }
@@ -376,6 +376,12 @@ img {
 }
 .social-network__link:hover, .social-network__link:focus {
   background-color: var(--blue-color);
+  fill: var(--full-white-text);
+}
+.social-network__link--color {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social-network__icon--color {
   fill: var(--full-white-text);
 }
 
@@ -801,6 +807,7 @@ Model windows and overlay
   fill: currentColor;
 }
 
+/* Footer part (divade) */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -859,13 +866,6 @@ Model windows and overlay
   text-transform: uppercase;
   color: var(--full-white-text);
   margin-bottom: 20px;
-}
-
-.footer-network__link {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.footer-network__icon {
-  fill: var(--full-white-text);
 }
 
 .footer-form {
@@ -943,6 +943,7 @@ Model windows and overlay
   color: var(--full-white-text);
 }
 
+/* Benefit section */
 .benefit {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1001,6 +1002,7 @@ Model windows and overlay
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+/* Team section */
 .team {
   max-width: 1600px;
   margin-left: auto;
