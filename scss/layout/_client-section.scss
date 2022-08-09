@@ -1,7 +1,7 @@
 /* Clients-list section */
 
 .client{
-@include section-padding();
+@extend %section-padding;
 
     &__container {
         @extend %container;

@@ -1,5 +1,6 @@
 .work {
-    @include section-padding(0px, 94px);
+    @extend %section-padding;
+    padding-top: 0;
 
     &__container{
         @extend %container;

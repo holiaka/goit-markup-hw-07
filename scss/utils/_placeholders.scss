@@ -8,6 +8,15 @@
     margin-right: auto;
 }
 
+/* ***Sections padding */
+
+%section-padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+//  Reset primary features
+
 %reset-list {
     list-style: none;
 }
